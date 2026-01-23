@@ -9,6 +9,12 @@ if CUTLASS_ROOT ~= nil then
     add_includedirs(CUTLASS_ROOT)
 end
 
+-- FlashAttention-2 port relies on CUTE/CUTLASS headers. Prefer the local submodule if present.
+local FA2_CUTLASS_INCLUDE = path.join(os.projectdir(), "..", "flash-attention", "csrc", "cutlass", "include")
+if os.isdir(FA2_CUTLASS_INCLUDE) then
+    add_includedirs(FA2_CUTLASS_INCLUDE)
+end
+
 target("infiniop-nvidia")
     set_kind("static")
     add_deps("infini-utils")

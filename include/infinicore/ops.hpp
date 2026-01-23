@@ -6,6 +6,8 @@
 #include "ops/causal_softmax.hpp"
 #include "ops/matmul.hpp"
 #include "ops/ones.hpp"
+#include "ops/flash_attention.hpp"
+#include "ops/flash_attention_prefill.hpp"
 #include "ops/paged_attention.hpp"
 #include "ops/paged_attention_prefill.hpp"
 #include "ops/paged_caching.hpp"

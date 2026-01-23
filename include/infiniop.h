@@ -11,6 +11,8 @@
 #include "infiniop/ops/dequantize_awq.h"
 #include "infiniop/ops/gelu.h"
 #include "infiniop/ops/gemm.h"
+#include "infiniop/ops/flash_attention.h"
+#include "infiniop/ops/flash_attention_prefill.h"
 #include "infiniop/ops/layer_norm.h"
 #include "infiniop/ops/logsoftmax.h"
 #include "infiniop/ops/lp_norm.h"

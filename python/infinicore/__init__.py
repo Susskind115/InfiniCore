@@ -48,6 +48,8 @@ from infinicore.ops.attention import attention
 from infinicore.ops.matmul import matmul
 from infinicore.ops.mul import mul
 from infinicore.ops.narrow import narrow
+from infinicore.ops.flash_attention import flash_attention
+from infinicore.ops.flash_attention_prefill import flash_attention_prefill
 from infinicore.ops.paged_attention import paged_attention
 from infinicore.ops.paged_attention_prefill import paged_attention_prefill
 from infinicore.ops.paged_caching import paged_caching
@@ -128,6 +130,8 @@ __all__ = [
     "from_numpy",
     "from_torch",
     "paged_caching",
+    "flash_attention",
+    "flash_attention_prefill",
     "paged_attention",
     "paged_attention_prefill",
     "ones",
